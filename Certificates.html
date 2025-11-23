@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certificate Display</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #0B1026, #09234A);
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+        color: #fff;
+    }
+
+    /* Floating animated particles */
+    .particles span {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: rgba(255,255,255,0.28);
+        border-radius: 50%;
+        animation: float 8s infinite linear;
+    }
+
+    @keyframes float {
+        from {
+            transform: translateY(120vh) scale(0.5);
+        }
+        to {
+            transform: translateY(-20vh) scale(1);
+        }
+    }
+
+    /* Certificate Card */
+    .certificate-container {
+        width: 800px;
+        background: #ffffff;
+        border-radius: 18px;
+        box-shadow: 0 0 40px rgba(255,255,255,0.2);
+        padding: 25px;
+        animation: fadeIn 1.5s ease;
+        transform-origin: center;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.85); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    .certificate-container img {
+        width: 33%;
+        border-radius: 12px;
+        animation: popIn 1.4s ease;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    }
+
+    @keyframes popIn {
+        from { transform: scale(0.7); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
+    .title {
+        text-align: center;
+        font-size: 28px;
+        margin-top: 20px;
+        font-weight: 600;
+        color: #ffffff;
+        letter-spacing: 1px;
+        animation: glow 1.8s infinite alternate;
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #41c4ff; }
+        to { text-shadow: 0 0 20px #83f9ff; }
+    }
+
+</style>
+</head>
+<body>
+
+<!-- Floating light particles -->
+<div class="particles">
+    <span style="left: 5%; animation-duration: 7s;"></span>
+    <span style="left: 15%; animation-duration: 9s;"></span>
+    <span style="left: 30%; animation-duration: 6s;"></span>
+    <span style="left: 50%; animation-duration: 10s;"></span>
+    <span style="left: 70%; animation-duration: 8s;"></span>
+    <span style="left: 85%; animation-duration: 7s;"></span>
+</div>
+
+<!-- Certificate Frame -->
+ <div>
+ <nav>
+    <ul>
+
+  <li ><a href="index.html" ><strong style="color: white;">Home</strong></a></li>
+    </ul>
+</nav>
+   
+<div class="certificate-container">
+    <img src="imageC2.jpeg" alt="Certificate Image">
+    <img src="imageC3.jpeg" alt="Certificate Image">
+    <img src="imageC1.jpeg" alt="Certificate Image">
+
+    <div class="title" style="color: black;">
+        Certificate of Achievement
+    </div>
+</div>
+ </div>
+
+</body>
+</html>
